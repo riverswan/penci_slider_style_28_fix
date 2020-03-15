@@ -1,0 +1,1 @@
+Quick fix for Style №28 homepage slider of Soledad Wordpress theme.
