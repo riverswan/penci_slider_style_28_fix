@@ -18,5 +18,3 @@
 
 })(jQuery);
 
-
-// return ( $(window).width() - parseInt( $('.owl-item').width() ) ) / -2 ;

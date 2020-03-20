@@ -18,3 +18,4 @@
 add_action('wp_enqueue_scripts', function () {
 	wp_enqueue_script('mmb-fix-slider-28', plugin_dir_url(__FILE__) . 'mmb-fix-slider-28.js',array( 'jquery' ),'',true);
 });
+
