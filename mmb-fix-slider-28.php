@@ -16,18 +16,13 @@
  */
 
 
-if ( is_page( 'tests' ) ) {
-	add_action(
-		'wp_enqueue_scripts',
-		function () {
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		if ( is_page( 'tests' ) ) {
 			wp_enqueue_script( 'mmb-fix-slider-28', plugin_dir_url( __FILE__ ) . 'mmb-fix-slider-28_for_tests_page.js', array( 'jquery' ), '', true );
-		}
-	);
-} else {
-	add_action(
-		'wp_enqueue_scripts',
-		function () {
+		} else {
 			wp_enqueue_script( 'mmb-fix-slider-28', plugin_dir_url( __FILE__ ) . 'mmb-fix-slider-28.js', array( 'jquery' ), '', true );
 		}
-	);
-}
+	}
+);
